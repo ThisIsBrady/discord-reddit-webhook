@@ -1,0 +1,23 @@
+{
+  "name": "discord-reddit-webhook",
+  "version": "1.0.0",
+  "description": "Query subreddit for new posts and publish them to a discord webhook",
+  "main": "build/src/index.js",
+  "license": "None",
+  "type": "module",
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "node-fetch": "^3.3.2",
+    "sequelize": "^6.37.1",
+    "sqlite3": "^5.1.7",
+    "typescript": "^5.3.3"
+  },
+  "scripts": {
+    "start": "yarn tsc && node .",
+    "build": "yarn tsc",
+    "addHook": "yarn tsc && node build/scripts/addWebhook.js"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^2.0.0"
+  }
+}
