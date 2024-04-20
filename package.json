@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Query subreddit for new posts and publish them to a discord webhook",
   "main": "build/src/index.js",
-  "license": "None",
+  "license": "GPL-3.0-only",
   "type": "module",
   "dependencies": {
     "discord.js": "^14.14.1",
