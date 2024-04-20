@@ -1,4 +1,4 @@
-import { Post, RedditResponse, getPosts } from './reddit.js';
+import { RedditResponse, getPosts } from './reddit.js';
 import { Hooks } from './db.js';
 import { EmbedBuilder } from 'discord.js';
 import fetch from 'node-fetch';
@@ -51,11 +51,6 @@ async function doUpdate() {
         });
         Hooks.update({ lastPostTimestamp: maxTime }, { where: { hook: entry.get('hook'), sub: entry.get('sub') } });
     });
-
-    // for each entry in db,
-    // fetch new reddit posts
-    // send webhook for any posts with timestamp > last timestamp
-    // update db entry with max timestamp
 }
 
 async function doPost() {
