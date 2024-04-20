@@ -1,0 +1,44 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pull-requests: read
+  packages: read
+  id-token: write
+
+jobs:
+  test:
+    strategy:
+      fail-fast: true
+      matrix:
+        os: [ubuntu-latest] # Possible values: [ubuntu-latest, windows-latest, macOS-latest]
+        test: [tsc]
+
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Install Node.js, NPM and Yarn
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Dependencies
+        run: yarn install --frozen-lockfile --network-timeout 300000
+
+      - name: Build and Run ${{ matrix.test }}
+        run: |
+          yarn ${{ matrix.test }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
