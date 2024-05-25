@@ -15,6 +15,8 @@ The script will query the subreddit for new posts every 5 minutes and post an em
 
 The `addHook` script can be run multiple times for multiple subreddits or multiple webhooks. Subreddits cannot be removed currently without deleting the database file and redoing the setup for the remaining subreddits, but it is planned to be able to remove them individually eventually.
 
+Hooks added with the `addHook` script are saved between runs, so after initial setup, there is no need to re-run the `addHook` script. Only `yarn start` needs to be run to start the program after the first run.
+
 [chunky-renderer]: https://github.com/chunky-dev/chunky
 [chunky-discord]: https://discord.gg/VqcHpsF
 [node-js]: https://nodejs.org/en/download/
