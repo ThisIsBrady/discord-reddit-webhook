@@ -2,6 +2,7 @@
 config.json
 build/
 *.sqlite
+.vscode
 
 # Logs
 logs
@@ -129,4 +130,5 @@ dist
 .yarn/unplugged
 .yarn/build-state.yml
 .yarn/install-state.gz
+.yarn/sdks
 .pnp.*
