@@ -31,7 +31,6 @@ type RedditResponse = {
 };
 
 async function getPosts(sub: string): Promise<RedditResponse> {
-    console.log(sub);
     try {
         const response = await fetch(`https://reddit.com/${sub}/new/.json`, {
             method: 'GET',
@@ -47,10 +46,10 @@ async function getPosts(sub: string): Promise<RedditResponse> {
         return result;
     } catch (error) {
         if (error instanceof Error) {
-            console.log(`Error Message: ${error.message}`);
+            console.error(`Error Message: ${error.message}`);
             return Promise.reject(error.message);
         } else {
-            console.log(`Unexpected Error: ${error}`);
+            console.error(`Unexpected Error: ${error}`);
             return Promise.reject(error);
         }
     }
