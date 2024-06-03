@@ -271,6 +271,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/node@npm:^20.14.0":
+  version: 20.14.0
+  resolution: "@types/node@npm:20.14.0"
+  dependencies:
+    undici-types: "npm:~5.26.4"
+  checksum: 10c0/29ccc7592e9ca6b81d00f3a6673241d08e9042d801b10adfd9ebcbbf326208e0a0133a8d146158db18d02a68b85d9ce1fd94e6e1e5be0da263129bf6e42eb22d
+  languageName: node
+  linkType: hard
+
 "@types/strip-bom@npm:^3.0.0":
   version: 3.0.0
   resolution: "@types/strip-bom@npm:3.0.0"
@@ -735,6 +744,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "discord-reddit-webhook@workspace:."
   dependencies:
+    "@types/node": "npm:^20.14.0"
     discord.js: "npm:^14.15.3"
     node-fetch: "npm:^3.3.2"
     sequelize: "npm:^6.37.3"
