@@ -10,7 +10,7 @@
     "node-fetch": "^3.3.2",
     "sequelize": "^6.37.3",
     "sqlite3": "^5.1.7",
-    "typescript": "^5.5.2"
+    "typescript": "^5.5.3"
   },
   "scripts": {
     "start": "yarn tsc && node .",
