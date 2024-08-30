@@ -13,6 +13,7 @@
     "typescript": "^5.5.4"
   },
   "scripts": {
+    "prod": "node .",
     "start": "yarn tsc && node .",
     "build": "yarn tsc",
     "addHook": "yarn tsc && node build/scripts/addWebhook.js"
