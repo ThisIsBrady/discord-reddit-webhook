@@ -19,7 +19,7 @@
     "addHook": "yarn tsc && node build/scripts/addWebhook.js"
   },
   "devDependencies": {
-    "@types/node": "^22.5.0",
+    "@types/node": "^22.5.1",
     "ts-node-dev": "^2.0.0"
   },
   "packageManager": "yarn@4.3.1"
