@@ -1,7 +1,9 @@
 FROM node:lts
 WORKDIR /app
 COPY package.json yarn.lock tsconfig.json ./
-RUN corepack enable && \
+RUN apt update && \
+    apt install tzdata && \
+    corepack enable && \
     yarn workspaces focus --production && \
     yarn install --immutable
 COPY scripts ./scripts
