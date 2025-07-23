@@ -6,7 +6,7 @@
   "license": "GPL-3.0-only",
   "type": "module",
   "dependencies": {
-    "discord.js": "^14.15.3",
+    "discord.js": "^14.21.0",
     "node-fetch": "^3.3.2",
     "sequelize": "^6.37.7",
     "sqlite3": "^5.1.7",
