@@ -748,7 +748,7 @@ __metadata:
     discord.js: "npm:^14.15.3"
     node-fetch: "npm:^3.3.2"
     node-gyp: "npm:^10"
-    sequelize: "npm:^6.37.3"
+    sequelize: "npm:^6.37.7"
     sqlite3: "npm:^5.1.7"
     ts-node-dev: "npm:^2.0.0"
     typescript: "npm:^5.5.4"
@@ -1955,9 +1955,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sequelize@npm:^6.37.3":
-  version: 6.37.3
-  resolution: "sequelize@npm:6.37.3"
+"sequelize@npm:^6.37.7":
+  version: 6.37.7
+  resolution: "sequelize@npm:6.37.7"
   dependencies:
     "@types/debug": "npm:^4.1.8"
     "@types/validator": "npm:^13.7.17"
@@ -1994,7 +1994,7 @@ __metadata:
       optional: true
     tedious:
       optional: true
-  checksum: 10c0/f6006bbe85d0e9660df410e7d33ff754a60912c5f4b5b0511be9fc3abd83fe83d6a1954814a741916ab8385211aba0a7a6561f3568061154105bb863f1900fa8
+  checksum: 10c0/e5b9634b3b986bc11a48b2f71badf3f296d86d0d42662b5f5e93a727467a8b15056411f75651cad876295e592a011876e86a41fb929fee703c03b272b5bba880
   languageName: node
   linkType: hard
 
