@@ -36,7 +36,13 @@ async function doUpdate() {
                     }
                 }
 
-                if (post.data.thumbnail && post.data.thumbnail != 'self') {
+                if (
+                    post.data.thumbnail &&
+                    post.data.thumbnail !== 'self' &&
+                    post.data.thumbnail !== 'default' &&
+                    post.data.thumbnail !== 'nsfw' &&
+                    /^https?:\/\//.test(post.data.thumbnail)
+                ) {
                     builder.setThumbnail(post.data.thumbnail);
                 }
 
