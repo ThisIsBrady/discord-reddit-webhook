@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "@types/node": "^24.1.0",
-    "node-gyp": "^10",
+    "node-gyp": "^11",
     "ts-node-dev": "^2.0.0"
   },
   "packageManager": "yarn@4.9.2"
