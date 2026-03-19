@@ -9,7 +9,7 @@
     "discord.js": "^14.24.2",
     "node-fetch": "^3.3.2",
     "sequelize": "^6.37.7",
-    "sqlite3": "^5.1.7",
+    "sqlite3": "^6.0.1",
     "typescript": "^5.9.2"
   },
   "scripts": {
