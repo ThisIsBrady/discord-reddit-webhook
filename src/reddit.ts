@@ -35,10 +35,13 @@ async function getPosts(sub: string): Promise<RedditResponse> {
         const response = await fetch(`https://reddit.com/${sub}/new/.json`, {
             method: 'GET',
             headers: {
-                Accept: 'application/json',
+                "Accept": 'application/json',
+                "User-Agent": "DiscordRedditHook",
+                "Sec-Ch-Ua": '"DiscordRedditHook";v="1"',
             },
         });
         if (!response.ok) {
+            console.log(response);
             throw new Error(`Error fetching reddit posts! Status: ${response.status}`);
         }
 
