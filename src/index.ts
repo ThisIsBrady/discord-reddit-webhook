@@ -74,5 +74,8 @@ async function doPost() {
 }
 // 5 minute update timer
 setInterval(doUpdate, 1000 * 60 * 5);
-// 500 ms interval to prevent rate limiting
-setInterval(doPost, 500);
+// 1000 ms interval to prevent rate limiting
+setInterval(doPost, 1000);
+
+doUpdate();
+doPost();
