@@ -14,7 +14,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@discordjs/builders@npm:^1.14.0":
+"@discordjs/builders@npm:^1.14.1":
   version: 1.14.1
   resolution: "@discordjs/builders@npm:1.14.1"
   dependencies:
@@ -549,7 +549,7 @@ __metadata:
   resolution: "discord-reddit-webhook@workspace:."
   dependencies:
     "@types/node": "npm:^25.6.0"
-    discord.js: "npm:^14.26.0"
+    discord.js: "npm:^14.26.3"
     node-fetch: "npm:^3.3.2"
     node-gyp: "npm:^12"
     sequelize: "npm:^6.37.8"
@@ -559,11 +559,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"discord.js@npm:^14.26.0":
-  version: 14.26.0
-  resolution: "discord.js@npm:14.26.0"
+"discord.js@npm:^14.26.3":
+  version: 14.26.3
+  resolution: "discord.js@npm:14.26.3"
   dependencies:
-    "@discordjs/builders": "npm:^1.14.0"
+    "@discordjs/builders": "npm:^1.14.1"
     "@discordjs/collection": "npm:1.5.3"
     "@discordjs/formatters": "npm:^0.6.2"
     "@discordjs/rest": "npm:^2.6.1"
@@ -576,7 +576,7 @@ __metadata:
     magic-bytes.js: "npm:^1.13.0"
     tslib: "npm:^2.6.3"
     undici: "npm:6.24.1"
-  checksum: 10c0/b693f6883426707fc988b4c485ebdd34dddda7373a3042c8c0ee306006ee4455c5a53a3c13f313a5e0df63dcff32dce21d0680cedcc103fbc73ba4bb6f5fa99a
+  checksum: 10c0/a358e8714bdc6a0d63b0e9246cd934e4ab620987b3e3bb55c1d3bc3ae298d4ec0c16268d380f3084d9338e99df56bce684dd50c22d090693acdcf91fa1b1c370
   languageName: node
   linkType: hard
 
